@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.5;
+    width: 100%;
+    color: #4a4a4a;
+    background-color: #fafafa;
+}
+
+header, footer {
+    padding: 2.5%;
+    background-color: #fafafa;
+    width: 100%;
+}
+
+h1 {
+    color: #d676a5;
+}
+
+.top-nav {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.top-nav a {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    padding: 0.4em;
+    margin: 2px 0;
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #faf4c9;
+}
+
+.top-nav a:visited {
+    color: #4a4a4a;
+}
+
+.top-nav a:hover  {
+    color: #fafafa;
+}
+
+header p, footer p {
+    color: grey;
+}
+
+.about-me {
+    padding: 35px 0;
+}
+
+.profile-image {
+    width: 75%;
+}
+
+main {
+    margin-top: 1em;
+    padding: 1.3em;
+    background-color: #fff;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: nowrap;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.box {
+    margin: 15px 0;
+    flex-direction: column;
+    flex: 1;
+    flex-basis: 20%;
+    order:1;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    padding: 0 1em;;
+}
+
+img {
+    width: 100%;
+}
+
+.skills-list {
+    text-align:left;
+}
+
+.info {
+    padding: 1em 0;
+}
+
+.resume {
+    background-color: #ffc0cb42;
+    text-align: left;
+}
+
+.bottom-nav {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.bottom-nav a, .bottom-nav li {
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.bottom-nav a:visited {
+    color: #4a4a4a;
+}
+
+ul.bottom-nav a:hover {
+    color: #faf4c9;
+}
+
+.bottom-nav li:first-child {
+    text-align: left;
+}
+
+.bottom-nav li:last-child {
+    text-align: right;
+}
+
+.bottom-nav-item p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-box-2 {
+    display: none;
+}
+
+
+
+/* Media queries */
+
+@media screen and (min-width: 768px) {
+    .menu, nav, .top-nav a {
+        background-color: #faf4c9;
+    }
+
+    .top-nav {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .top-nav a {
+        margin: 0 1em;
+    }
+
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about-me {
+        display: flex;
+        
+    }
+
+    .about-me p {
+        order: -1;
+        margin-top: 0;
+        margin-right: 14px;
+        flex-grow: 2;
+        text-align: left;
+    }
+
+    .profile-image {
+        width: 40%;
+        margin-right: 1%;
+    }
+
+    .container {
+        align-items: start;
+        flex-direction: row;  
+        flex-wrap: wrap;
+    }
+
+    .box {
+        flex-basis: 40%;
+        margin: 6px;
+    }
+
+    .footer-box {
+        display: none;
+    }
+
+    .footer-box-2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .bottom-nav a {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        padding: 2em;
+    }
+    .top-nav {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .footer-box {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
+        width: 100vw;
+        padding: 0 3em;
+    }
+
+    .about-me p {
+        padding-left: 0;
+    }
+
+
+    .box {
+        flex-basis: 30%;
+    }
+}
